@@ -69,13 +69,13 @@ header nav ul li a {
 header nav ul li:not(.active):not(.btn) a:hover{
  border-bottom: 5px solid #DC7000;
 }
-header nav ul li.btn a {
+header nav ul li.btn a, .email .block button {
     background-color: #FA9021;
     padding: 9px 17px;
     border-radius: 5px;
     transition: all 500ms ease;
 }
-header nav ul li.btn a:hover {
+header nav ul li.btn a:hover , .email .block button:hover {
     background-color: #dc5f00;
 }
 .hero {
@@ -128,7 +128,7 @@ header nav ul li.btn a:hover {
     font-size: 31px;
     font-weight: 600;
 }
-.trending .see-all, .projects .see-all{
+.trending .see-all {
     color: white;
     background: #35311d;
     border-radius: 5px;
@@ -227,10 +227,106 @@ header nav ul li.btn a:hover {
     justify-content: space-around;
     margin-bottom: 25px;
 }
-.projects .see-all{
-    float: none;
+.projects .see-all {
+    color: white;
+    background: #35311d;
+    border-radius: 5px;
+    padding: 12px 23px;
+    display: block;
     width: 60px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    transition: all 500ms ease;
+}
+.see-all:hover {
+    transform: scale(1.1);
+}
+.email {
+    padding-bottom: 120px;
+}
+.email h3 {
+    margin-top: 60px;
+    font-size: 30px;
+}
+.email .block {
+    background: #1c140f;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 40px 3%;
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.email .block h4{
+    font-weight: 500;
+    font-size: 30px;
+}
+.email .block p{
+    width: 500px;
+}
+
+.email .block input {
+    background: #ffff;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    width: 380px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    padding: 20px 30px;
+    position: relative;
+    right: -100px;
+    z-index: 1;
+    padding-right: 120px;
+}
+.email .block input::placeholder {
+    color: #898989;
+}
+.email .block button {
+ cursor: pointer;
+ border: 0;
+ padding: 13px 17px;
+ position: relative;
+ z-index: 2;
+ color: #ffff;
+}
+
+footer {
+    background: #000000;
+    padding: 50px 50px;
+}
+footer .blocks {
+display: flex;
+justify-content: space-between;
+}
+footer .logo {
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 800;
+}
+footer .blocks p {
+    width: 300px;
+    margin: 15px 0;
+}
+footer .blocks h4{
+    font-weight: 500;
+    font-size: 17px;
+}
+footer .blocks ul {
+    list-style: none;
+}
+footer .blocks ul li {
+    margin-top: 7px;
+    opacity: 0.8;
+}
+footer hr {
+    margin: 30px 0;
+    border: 0;
+    height: 0.6px;
+    background:gray;
+}
+footer > p {
+    text-align: center;
 }
