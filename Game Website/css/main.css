@@ -23,12 +23,59 @@ img {
     background: #000000;
     background: linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(74, 40, 0, 1) 100%);
     width: 100%;
+    overflow-x:hidden ;
 }
 .container {
-    width: 1400px;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 50px 16px;
+}
 
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1000px;
+    padding: 40px 12px;
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    max-width: 700px;
+    padding: 30px 8px;
+  }
+  .banner-container, .banner .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .banner--info {
+    margin-left: 0;
+    width: 100%;
+  }
+  .team-blocks {
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .member {
+    width: 100%;
+    min-width: unset;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    padding: 16px 4px;
+  }
+  .hero--info, .banner--info {
+    width: 100%;
+    padding: 0;
+  }
+  .banner-container img, .banner .container img {
+    max-width: 100%;
+    width: 100%;
+  }
 }
 header {
     padding: 50px 0;
@@ -103,7 +150,7 @@ header nav ul li.btn a:hover , .email .block button:hover {
     margin: 30px 0;
     font-size: 16px;
 }
-.hero--info .btn{
+.hero--info .btn {
     background: #FB9E3C;
     color: white;
     border-radius: 50px;
@@ -244,6 +291,7 @@ header nav ul li.btn a:hover , .email .block button:hover {
 }
 .email {
     padding-bottom: 120px;
+    margin-top: 80px; /* Добавлен отступ сверху для email-блока */
 }
 .email h3 {
     margin-top: 60px;
@@ -329,4 +377,173 @@ footer hr {
 }
 footer > p {
     text-align: center;
+}
+
+
+
+/* about us page */
+
+.hero-about {
+  position: relative;
+}
+
+.hero-about .info {
+width: 500px;
+padding: 250px 0;
+}
+.hero-about .info h1 {
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+.hero-about .info .btn {
+    background: #FB9E3C;
+    color: white;
+    border-radius: 50px;
+    padding: 15px 30px;
+    border: 0;
+    transition: all 500ms ease;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.hero-about .info .btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.hero-about  img {
+    position: absolute;
+    right: -150px;
+    top: 0;
+}
+.work {
+  padding: 80px 0;  
+}
+.work h2 {
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+.work .blocks {
+    display: flex;
+    justify-content: space-between;
+}
+.work .blocks .block {
+    width: 25%;
+    border-radius: 10px;
+    padding: 50px 35px;
+    background: #1C140F;
+}
+.work .blocks .block h3{
+    font-size: 20px;
+    margin: 20px 0;
+}
+.work .blocks .block .bladge-green{
+    border-radius: 7px;
+    padding: 10px 20px;
+    background: rgba(0, 220, 141, 0.11);
+}
+.work .blocks .block .bladge-brown{
+    border-radius: 10px;
+    padding: 10px 20px;
+    background: rgba(220, 66, 0, 0.11);
+}
+.work .blocks .block .bladge-purple{
+    border-radius: 10px;
+    padding: 10px 20px;
+    background:rgba(176, 0, 220, 0.11);
+}
+
+.banner {
+  background: #1C140F; 
+  padding: 80px 0px;
+}
+.banner-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+}
+.banner-container img {
+  width: 400px;
+  height: auto;
+  display: block;
+}
+.banner--info {
+  width: 530px;
+  margin-left: 100px;
+  color: #fff;
+}
+.banner--info p {
+  margin-bottom: 20px;
+}
+.banner--info h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+
+.team {
+  margin: 200px 0;
+  padding: 50px 0; /* Отступы сверху и снизу как у work */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 300px; /* отступы слева и справа */
+}
+
+.container.work {
+    margin-bottom: 80px; /* Добавлен отступ снизу для блока Why work with us */
+}
+
+.team h3 {
+  margin: 0 50px;
+  font-size: 30px;
+  color: #fff; /* если нужно */
+  margin-top: 100px; /* Отступ сверху для Our Team */
+  margin-bottom: 30px; /* Отступ снизу для Our Team */
+  padding-left: 0; /* как Why work with us */
+}
+.team-blocks {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px; /* Промежуток между карточками */
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.member {
+  background: #1C140F;
+  border-radius: 10px;
+  width: 20%; /* 4 блока в ряд */
+  height: auto;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 150px;
+  box-sizing: border-box;
+}
+.banner.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.banner.container img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.banner--info {
+    width: 550px;
+    text-align: left;
+}
+.container.email {
+    margin-top: 80px;
+    margin-bottom: 50px;
 }
