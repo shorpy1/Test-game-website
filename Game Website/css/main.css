@@ -10,6 +10,7 @@ body {
     font-weight: 400;
     color: white;
     font-size: 16px;
+    background: #000000;
 }
 
 a {
@@ -26,7 +27,7 @@ img {
     overflow-x:hidden ;
 }
 .container {
-    max-width: 1200px;
+    max-width: 100px;
     width: 100%;
     margin: 0 auto;
     padding: 50px 16px;
@@ -482,39 +483,39 @@ padding: 250px 0;
 
 .team {
   margin: 200px 0;
-  padding: 50px 0; /* Отступы сверху и снизу как у work */
+  padding: 50px 0;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 300px; /* отступы слева и справа */
+  padding: 0 100px;
 }
 
 .container.work {
-    margin-bottom: 80px; /* Добавлен отступ снизу для блока Why work with us */
+    margin-bottom: 80px;
 }
 
 .team h3 {
   margin: 0 50px;
   font-size: 30px;
-  color: #fff; /* если нужно */
-  margin-top: 100px; /* Отступ сверху для Our Team */
-  margin-bottom: 30px; /* Отступ снизу для Our Team */
-  padding-left: 0; /* как Why work with us */
+  color: #fff;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  padding-left: 0;
 }
 .team-blocks {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 30px; /* Промежуток между карточками */
+  gap: 30px;
   padding-left: 20px;
   padding-right: 20px;
 }
 .member {
   background: #1C140F;
   border-radius: 10px;
-  width: 20%; /* 4 блока в ряд */
+  width: 20%;
   height: auto;
   padding: 20px 10px;
   display: flex;
@@ -546,4 +547,84 @@ padding: 250px 0;
 .container.email {
     margin-top: 80px;
     margin-bottom: 50px;
+}
+
+/*  contact page */
+
+.hero-contacts h1 {
+ text-align: center;
+ margin-top: 70px;
+ margin-bottom: 30px;
+ font-size: 33px;
+}
+.hero-contacts p {
+    text-align: center;
+}
+
+.hero-contacts img {
+    width: 70%;
+    margin:  80px 15%;
+}
+.feedback {
+    padding: 70px 0;
+    background: #1C140F;
+}
+.feedback h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.feedback p {
+    text-align: center;
+    margin-top: 30px;
+}
+.feedback form {
+    margin: 80px auto;
+    width: 600px;
+}
+.feedback form .inline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback form .inline > div {
+    width: 50%;
+}
+
+.feedback form label {
+ color: #4F4F4F;
+ font-size: 14px;
+}
+.feedback form input,
+.feedback form textarea {
+ background: #2c2420;
+ border-radius: 10px;
+ border: 0.6px solid #CECECE;
+ display: block;
+ width: 90%;
+ padding: 15px 10px;
+ outline: none;
+ color: #fff;
+ margin-bottom: 25px;
+}
+.feedback form .one-line {
+    width: 96%;
+}
+.feedback form textarea {
+    resize: none;
+    height: 200px;
+}
+.feedback form button {
+    background: #DC7000;
+    border-radius: 5px;
+    border: 0px;
+    float: right;
+    cursor: pointer;
+    color: #fff;
+    padding: 15px 35px;
+    transition: all 500ms ease;
+}
+.feedback form button:hover {
+    background: #dc5f00;
 }
