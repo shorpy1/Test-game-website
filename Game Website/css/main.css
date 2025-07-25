@@ -628,3 +628,62 @@ padding: 250px 0;
 .feedback form button:hover {
     background: #dc5f00;
 }
+
+/* portfolio page */
+
+.hero-portfolio h2 {
+text-align: center;
+ margin-top: 70px;
+ margin-bottom: 30px;
+ font-size: 33px;
+}
+
+.hero-portfolio p {
+    text-align: center;
+}
+
+.experience {
+  margin: 70px auto 0;
+  max-width: 1200px;
+  background: #1C140F;
+  padding: 50px 0;
+}
+
+.experience--info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.experience--info .block {
+  position: relative;
+  flex: 1;
+}
+
+.experience--info .block:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 170px;
+  background: #fff;
+}
+
+.experience--info .block img {
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.experience--info .block h3 {
+  margin: 0 0 5px 0;
+  font-size: 28px;
+  color: #fff;
+}
+
+.experience--info .block p {
+  margin: 0;
+  color: #fff;
+}
