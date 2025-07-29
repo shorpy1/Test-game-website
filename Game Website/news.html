@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Website</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <header class="container"> 
+        <span class="logo">logo</span>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about.html">About us</a></li>
+                <li><a href="/portfolio.html">Portfolio</a></li>
+                <li class="active" ><a href="/news.html">News</a></li>
+                <li class="btn"><a href="/contacts.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<div class="hero-news-content">
+  <h3>Lorem Ipsum is simply dummy text of the printing and.</h3>
+  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+  <div class="search">
+    <img src="img/search 1.png" alt="Search Icon">
+    <form action="" method="get">
+      <input name="Search" placeholder="Search" type="search">
+    </form>
+  </div>
+</div>
+
+<div class="hero-news-banner">
+  <div class="news-main">
+    <div class="news-item">
+      <img src="img/Rectangle 274-1.png" alt="">
+      <div class="news-text">
+        <button>John smash</button>
+        <p>5min</p>
+        <h3>Lorem Ipsum is simply dummy text dummy text</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <img src="img/Rectangle 274.png" alt="">
+      <div class="news-text">
+        <button>John smash</button>
+        <p>5min</p>
+        <h3>Lorem Ipsum is simply dummy text dummy text</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="news-side">
+    <div class="side-card">
+      <img src="/img/Rectangle 276-1.png" alt="">
+      <button>John smash</button>
+      <p>5min</p>
+      <h3>Lorem Ipsum is simply dummy text dummy text ?</h3>
+    </div>
+    <div class="side-card">
+      <img src="/img/Rectangle 276-2.png" alt="">
+      <button>John smash</button>
+      <p>5min</p>
+      <h3>Lorem Ipsum is simply dummy text dummy text ?</h3>
+    </div>
+    <div class="side-card">
+      <img src="/img/Rectangle 276-3.png" alt="">
+      <button>John smash</button>
+      <p>5min</p>
+      <h3>Lorem Ipsum is simply dummy text dummy text ?</h3>
+    </div>
+    <div class="side-card">
+      <img src="/img/Rectangle 276-4.png" alt="">
+      <button>John smash</button>
+      <p>5min</p>
+      <h3>Lorem Ipsum is simply dummy text dummy text ?</h3>
+    </div>
+    <div class="side-card">
+      <img src="/img/Rectangle 276-5.png" alt="">
+      <button>John smash</button>
+      <p>5min</p>
+      <h3>Lorem Ipsum is simply dummy text dummy text ?</h3>
+    </div>
+    <div class="side-card">
+      <img src="/img/Rectangle 276-6.png" alt="">
+      <button>John smash</button>
+      <p>5min</p>
+      <h3>Lorem Ipsum is simply dummy text dummy text ?</h3>
+    </div>
+    <div class="side-card">
+      <img src="/img/Rectangle 276.png" alt="">
+      <button>John smash</button>
+      <p>5min</p>
+      <h3>Lorem Ipsum is simply dummy text dummy text ?</h3>
+    </div>
+  </div>
+</div>
+       
+       <div class="container email">
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <div class="block">
+                <div class="left">
+                <h4>Stay in the loop</h4>
+                <p>Subscribe to receive the latest news and updates about TDA. We promise not to spam you!</p>
+                </div>
+                <div class="right">
+                <input type="email" id="emailField" placeholder="Enter email address">
+                <button onclick="checkEmail()">Continue</button>
+                </div>
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="blocks cointainer">
+                <div>
+                    <span class="logo">logo</span>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                </div>
+                <div>
+                    <h4>About us</h4>
+                        <ul>
+                            <li>Zeux</li>
+                            <li>Portfolio</li>
+                            <li>Careers</li>
+                            <li>Contact us</li>
+                        </ul>
+                </div>
+                <div>
+                    <h4>Contact us</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    <p>+908 89097 890</p>
+                </div>
+            </div>
+            <hr>
+           <p>Copyright ® 2025 Lorem All rights Rcerved by shorpy</p>
+        </footer>
+
+    <script>
+        function checkEmail(){
+            let email = document.querySelector('#emailField').value;
+            if(!email.includes('@')) alert('no @ symbol');
+            else if(!email.includes('.')) alert('no . symbol');
+            else alert('Everything is fine😁');
+        }
+    </script>
+
+</body>
+</html>
